@@ -1,0 +1,39 @@
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+td {border:solid 1px #000;overflow:hidden;height:12.5%;/*white-space:nowrap;*/}
+p {font-size:13px;}
+
+.envelope {border:solid 1px #000;position:relative;margin:1em auto;box-shadow:2px 2px 2px #000;}
+.small {width:23cm;height:11cm;}
+.medium {width:23cm;height:16cm;}
+.big {width:23cm;height:19cm;}
+.envelope img {position:absolute;top:1cm;left:1cm;width:5cm;height:auto;}
+.envelope p {position:absolute;bottom:2cm;right:4cm;}
+
+@media screen {
+	table {max-width:800px;}
+}
+
+@page {
+  size: landscape !important;   
+  margin: 0;
+  size: 210mm 297mm;
+}
+
+@media print {
+	.break {page-break-after: always;}
+	.envelope {margin:0;border:none;box-shadow:none;}
+	.small {margin: 5cm 0cm 5cm 4.7cm;}
+	.medium {margin: 2.5cm 0cm 2.5cm 4.7cm;}
+	.big {margin: 1cm 0cm 1cm 4.7cm;}
+	.envelope img {top:1cm;left:3cm;}
+	.small p {bottom:2cm;right:1cm;}
+	.medium p, .big p {bottom:4cm; right:4cm;}
+	form {display: none !important;}
+	.button, .center {display: none;}
+}
+

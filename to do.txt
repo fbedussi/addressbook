@@ -1,0 +1,5 @@
+collegamento con mailchimp
+a capo nelle note
+collegare gestione user
+installazione
+controllo vulnerabilità Cross Site Request Forgeries

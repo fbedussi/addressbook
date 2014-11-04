@@ -1,0 +1,28 @@
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+
+td {border:solid 1px #000;overflow:hidden;height:12.5%;/*white-space:nowrap;*/}
+p {font-size:13px;padding: 1em;height:100%;}
+
+
+table {width:100%;table-layout:fixed;}
+
+@media screen {
+	table {max-width:800px;}
+}
+
+@page {
+  size: auto;   /* auto is the initial value */
+  margin: 0;
+}
+
+@media print { 
+	form { display: none !important; } 
+	td {border:none;}
+	td {height:35mm;}
+}
+
